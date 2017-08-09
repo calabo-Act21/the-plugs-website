@@ -2,10 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 import { AppComponent } from './app.component';
+import { AlbumComponent } from './album/album.component';
+import { VideosComponent } from './videos/videos.component';
+import { PhotosComponent } from './photos/photos.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlbumComponent,
+    VideosComponent,
+    PhotosComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

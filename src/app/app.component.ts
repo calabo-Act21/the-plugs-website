@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  sections = [
+    { id: 'album', label: 'Album' },
+    { id: 'videos', label: 'Vidéos' },
+    { id: 'photos', label: 'Photos' },
+    { id: 'news', label: 'News' }
+  ];
 }

@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+$header-back: #282828;
+$header-fore: #FFDE16;
+
+nav {
+    background: $header-back; 
+
+    .brand-logo {
+    font-size: 1.8rem;
+    margin-left: 15px;
+    margin-right: 25px;
+    position: initial;
+    }
+
+    .nav-wrapper > ul > li > a {
+        color: $header-fore;
+    }
+}
+
+.section {
+    height: 600px;
+}
+
+

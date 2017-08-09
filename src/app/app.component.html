@@ -1,15 +1,46 @@
-<div class="row">
-  <div class="col s12">
-    <ul class="tabs" materialize="tabs">
-      <li class="tab col s3"><a href="#test1" class="active">Test 1</a></li>
-      <li class="tab col s3"><a class="" href="#test2">Test 2</a></li>
-      <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
-      <li class="tab col s3"><a href="#test4">Test 4</a></li>
-      <li class="indicator" style="right: 1229px; left: 0px;"></li>
-    </ul>
+<div class="app-wrapper">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="#" class="brand-logo">The Plugs</a></li>
+          <li *ngFor="let section of sections">
+            <a [href]="'#'+section.id"> {{section.label}}</a>
+          </li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="https://www.youtube.com/channel/UCEO4PFotP2rN4jEuakVxTrw" target="_blank"><i class="mdi mdi-24px mdi-youtube-play"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/the_plugs_fr" target="_blank"><i class="mdi mdi-24px mdi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Plugsband" target="_blank"><i class="mdi mdi-24px mdi-facebook-box"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
-  <div class="col s12 active" id="test1" style="display: block;">Test 1</div>
-  <div class="col s12" id="test2" style="display: none;">Test 2</div>
-  <div class="col s12" id="test3" style="display: none;">Test 3</div>
-  <div class="col s12" id="test4" style="display: none;">Test 4</div>
+
+  <div class="row">
+    <div class="col s12">
+      <div materialize="scrollSpy" *ngFor="let section of sections" [id]="section.id" class="section scrollspy">
+        <div [ngSwitch]="section.id">
+          <div *ngSwitchCase="'album'">
+            <app-album></app-album>
+          </div>
+          <div *ngSwitchCase="'videos'">
+            <app-videos></app-videos>
+          </div>
+          <div *ngSwitchCase="'photos'">
+            <app-photos></app-photos>
+          </div>
+          <div *ngSwitchCase="'news'">
+            <app-news></app-news>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
