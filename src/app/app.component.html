@@ -2,12 +2,15 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
+        <a href="#" class="left brand-logo">The Plugs</a>
+        <a href="#" materialize="sideNav" [materializeParams]="[{edge:'left', closeOnClick: true}]" data-activates="mobile-menu"
+          class="button-collapse right"><i class="mdi mdi-36px mdi-menu"></i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="#" class="brand-logo">The Plugs</a></li>
           <li *ngFor="let section of sections">
             <a [href]="'#'+section.id"> {{section.label}}</a>
           </li>
         </ul>
+
         <ul class="right hide-on-med-and-down">
           <li>
             <a href="https://www.youtube.com/channel/UCEO4PFotP2rN4jEuakVxTrw" target="_blank"><i class="mdi mdi-24px mdi-youtube-play"></i></a>
@@ -19,13 +22,19 @@
             <a href="https://www.facebook.com/Plugsband" target="_blank"><i class="mdi mdi-24px mdi-facebook-box"></i></a>
           </li>
         </ul>
+        <ul class="side-nav" id="mobile-menu">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
       </div>
     </nav>
   </div>
 
-  <div class="row">
+  <div class="row" *ngFor="let section of sections" [id]="'root-' + section.id">
     <div class="col s12">
-      <div materialize="scrollSpy" *ngFor="let section of sections" [id]="section.id" class="section scrollspy">
+      <section materialize="scrollSpy" [id]="section.id" class="section scrollspy">
         <div [ngSwitch]="section.id">
           <div *ngSwitchCase="'album'">
             <app-album></app-album>
@@ -40,7 +49,7 @@
             <app-news></app-news>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </div>

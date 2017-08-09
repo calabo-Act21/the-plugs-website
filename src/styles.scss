@@ -1,23 +1,54 @@
 $header-back: #282828;
-$header-fore: #FFDE16;
+$header-fore: #E1DE16;
 
-nav {
-    background: $header-back; 
+$section-color: #282828;
+$section-color-light: #383838;
 
-    .brand-logo {
+$section-title-main: #FFF;
+$section-title-alt: #E1DE16;
+
+$border: 1px solid rgba(255, 255, 255, 0.2);
+
+nav .brand-logo {
+    color: $header-fore;    
     font-size: 1.8rem;
     margin-left: 15px;
     margin-right: 25px;
     position: initial;
-    }
+}
 
+nav {
+    background: $header-back; 
+    border-bottom: $border;
     .nav-wrapper > ul > li > a {
         color: $header-fore;
     }
 }
 
 .section {
-    height: 600px;
+    padding: 40px 0px
 }
 
+#root-album {
+    background: $section-color-light;
+}
 
+.main-title {
+    font-weight: bold;
+    font-size: 64px;
+    color: $section-title-main;
+  }
+
+.alt-title {
+    font-size: 42px;
+    color: $section-title-alt;
+    font-weight: 400;
+  }
+  
+
+  @media (max-width: 500px) {
+    .main-title { font-size: 48px!important; }
+    .alt-title { font-size: 24px!important; }
+    .news-maxi { display: none!important; }
+    .news-mini { display: block!important; }
+}
