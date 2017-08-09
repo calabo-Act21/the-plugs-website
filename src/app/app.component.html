@@ -23,16 +23,23 @@
           </li>
         </ul>
         <ul class="side-nav" id="mobile-menu">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
+          <li *ngFor="let section of sections">
+            <a [href]="'#'+section.id"> {{section.label}}</a>
+          </li>
         </ul>
       </div>
     </nav>
   </div>
 
-  <div class="row" *ngFor="let section of sections" [id]="'root-' + section.id">
+  <div class="row section-row" id="root-home">
+    <div class="col s12">
+      <section id="home" class="section">
+        <app-home></app-home>
+      </section>
+    </div>
+  </div>
+
+  <div class="row section-row" *ngFor="let section of sections" [id]="'root-' + section.id">
     <div class="col s12">
       <section materialize="scrollSpy" [id]="section.id" class="section scrollspy">
         <div [ngSwitch]="section.id">

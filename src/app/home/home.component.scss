@@ -1,0 +1,16 @@
+.container {
+    padding: 80px 0 40px 0;
+}
+
+.home-logo { width: 45%; }
+
+@media (max-width: 700px) {
+    .home-logo { width: 65%; }
+}
+
+.intro {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 40px;
+}

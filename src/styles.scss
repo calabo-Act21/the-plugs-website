@@ -9,6 +9,12 @@ $section-title-alt: #E1DE16;
 
 $border: 1px solid rgba(255, 255, 255, 0.2);
 
+body {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 300;
+    -webkit-text-size-adjust: 100%; 
+}
+
 nav .brand-logo {
     color: $header-fore;    
     font-size: 1.8rem;
@@ -29,6 +35,19 @@ nav {
     padding: 40px 0px
 }
 
+.section-row {
+    margin: 0;
+    border-bottom: $border;
+}
+
+#root-home {
+ margin:0;
+  padding:0;
+  background: url(./assets/images/home.jpg) no-repeat center; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
 #root-album {
     background: $section-color-light;
 }
@@ -44,7 +63,6 @@ nav {
     color: $section-title-alt;
     font-weight: 400;
   }
-  
 
   @media (max-width: 500px) {
     .main-title { font-size: 48px!important; }

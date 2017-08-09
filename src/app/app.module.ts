@@ -6,6 +6,7 @@ import { AlbumComponent } from './album/album.component';
 import { VideosComponent } from './videos/videos.component';
 import { PhotosComponent } from './photos/photos.component';
 import { NewsComponent } from './news/news.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NewsComponent } from './news/news.component';
     AlbumComponent,
     VideosComponent,
     PhotosComponent,
-    NewsComponent
+    NewsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

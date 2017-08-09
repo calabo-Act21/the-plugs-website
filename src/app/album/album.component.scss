@@ -3,3 +3,7 @@
     width: 700px;
     margin: 40px auto 0 auto;
 }
+
+  @media (max-width: 700px) {
+    .player-wrapper { width: 100% }
+}
