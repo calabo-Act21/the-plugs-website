@@ -7,6 +7,7 @@ import { VideosComponent } from './videos/videos.component';
 import { PhotosComponent } from './photos/photos.component';
 import { NewsComponent } from './news/news.component';
 import { HomeComponent } from './home/home.component';
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    MaterializeModule
+    MaterializeModule,
+    Angular2ImageGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

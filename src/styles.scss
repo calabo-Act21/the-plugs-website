@@ -1,43 +1,57 @@
 $header-back: #282828;
-$header-fore: #E1DE16;
+$header-fore: #ebb538;
 
 $section-color: #282828;
 $section-color-light: #383838;
 
 $section-title-main: #FFF;
-$section-title-alt: #E1DE16;
+$section-title-alt: #ebb538;
 
 $border: 1px solid rgba(255, 255, 255, 0.2);
+$action-color: #7c1c1c;
+
+$nav-height: 90px;
 
 body {
-    font-family: "Open Sans", sans-serif; 
-    font-weight: 300;
-    -webkit-text-size-adjust: 100%; 
+    // font-family: "Open Sans", sans-serif; 
+    // font-weight: 300;
+    // -webkit-text-size-adjust: 100%; 
     background: $section-color-light;
 }
 
-.slider .indicators .indicator-item.active {
-    background-color: #E1DE16;
+#sidenav-overlay {
+    z-index: 996;
 }
 
-nav .brand-logo {
-    color: $header-fore;    
-    font-size: 1.8rem;
-    margin-left: 15px;
-    margin-right: 25px;
-    position: initial;
+.slider .indicators .indicator-item.active {
+    background-color: $action-color;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: $nav-height;
+    line-height: $nav-height;
+}
+.navbar-fixed {
+    height: $nav-height;
 }
 
 nav {
     background: $header-back; 
     border-bottom: $border;
+    .brand-logo {
+        color: $header-fore;    
+        font-size: 1.8rem;
+        margin-left: 15px;
+        margin-right: 25px;
+        position: initial;
+    }
     .nav-wrapper > ul > li > a {
         color: $header-fore;
     }
 }
 
 .section {
-    padding: 40px 0px
+padding: 20px 0px 40px 0px;
 }
 
 .section-row {
@@ -46,11 +60,11 @@ nav {
 }
 
 #root-home {
-    position: relative;
-    top: -65px;
+    // position: relative;
+    // top: -65px;
     margin:0;
     padding:0;
-    background: url(./assets/images/home.jpg) no-repeat center; 
+    background: url(./assets/img/home.jpg) no-repeat center; 
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
 }
@@ -60,10 +74,10 @@ nav {
 }
 
 #root-videos {
-    height: 1000px;
+    // height: 900px;
     margin:0;
     padding:0;
-    background: url(./assets/images/videos.jpg) no-repeat center; 
+    background: url(./assets/img/videos.jpg) no-repeat center; 
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
 }
@@ -71,6 +85,7 @@ nav {
 .main-title {
     font-weight: bold;
     font-size: 64px;
+    margin-bottom: 10px;
     color: $section-title-main;
   }
 
