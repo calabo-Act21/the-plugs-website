@@ -2,8 +2,10 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="left brand-logo">The Plugs</a>
-        <a href="#" materialize="sideNav" [materializeParams]="[{edge:'left', closeOnClick: true}]" data-activates="mobile-menu"
+        <a href="#" class="left brand-logo">
+          <img class="header-logo" src="assets/img/header-logo.png" alt="The Plugs">
+        </a>
+        <a href="#" materialize="sideNav" [materializeParams]="[{edge:'right', closeOnClick: true}]" data-activates="mobile-menu"
           class="button-collapse right"><i class="mdi mdi-36px mdi-menu"></i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li *ngFor="let section of sections">
@@ -11,7 +13,7 @@
           </li>
         </ul>
 
-        <ul class="right hide-on-med-and-down">
+        <ul class="social-menu right hide-on-med-and-down">
           <li>
             <a href="https://www.youtube.com/channel/UCEO4PFotP2rN4jEuakVxTrw" target="_blank"><i class="mdi mdi-24px mdi-youtube-play"></i></a>
           </li>
@@ -23,7 +25,7 @@
           </li>
         </ul>
         <ul class="side-nav" id="mobile-menu">
-          <li *ngFor="let section of sections">
+          <li *ngFor="let section of sections" class="center-align">
             <a [href]="'#'+section.id"> {{section.label}}</a>
           </li>
         </ul>

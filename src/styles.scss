@@ -19,12 +19,14 @@ body {
     background: $section-color-light;
 }
 
-#sidenav-overlay {
-    z-index: 996;
+//////////////////////////////////////////////////////////////
+// HEADER
+.header-logo {
+    margin: 10px;
 }
 
-.slider .indicators .indicator-item.active {
-    background-color: $action-color;
+#sidenav-overlay {
+    z-index: 996;
 }
 
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
@@ -33,6 +35,12 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 }
 .navbar-fixed {
     height: $nav-height;
+}
+
+.side-nav {
+    background: $header-back; 
+    border-left: $border;
+        
 }
 
 nav {
@@ -48,17 +56,17 @@ nav {
     .nav-wrapper > ul > li > a {
         color: $header-fore;
     }
+    .social-menu {
+        margin-right: 10px;
+    }
+    .mdi-menu {
+        color: $header-fore;
+    }
 }
 
-.section {
-padding: 20px 0px 40px 0px;
-}
 
-.section-row {
-    margin: 0;
-    border-bottom: $border;
-}
-
+//////////////////////////////////////////////////////////////
+// ROOTS
 #root-home {
     // position: relative;
     // top: -65px;
@@ -82,6 +90,18 @@ padding: 20px 0px 40px 0px;
     background-size: cover; /* version standardisée */
 }
 
+//////////////////////////////////////////////////////////////
+// SECTIONS 
+
+.section {
+padding: 20px 0px 40px 0px;
+}
+
+.section-row {
+    margin: 0;
+    border-bottom: $border;
+}
+
 .main-title {
     font-weight: bold;
     font-size: 64px;
@@ -100,4 +120,8 @@ padding: 20px 0px 40px 0px;
     .alt-title { font-size: 24px!important; }
     .news-maxi { display: none!important; }
     .news-mini { display: block!important; }
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: $action-color;
 }
