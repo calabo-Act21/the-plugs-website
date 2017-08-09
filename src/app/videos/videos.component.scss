@@ -1,0 +1,11 @@
+.container { width: 900px; }
+
+.main-title { margin: 60px; }
+
+.slider .slides {
+    background-color: rgba(0,0,0,0);
+}
+
+@media (max-width: 900px) {
+    .container { width: 100%; }
+}

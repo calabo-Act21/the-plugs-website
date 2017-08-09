@@ -7,7 +7,7 @@
           class="button-collapse right"><i class="mdi mdi-36px mdi-menu"></i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li *ngFor="let section of sections">
-            <a [href]="'#'+section.id"> {{section.label}}</a>
+            <a [href]="'#'+section.id"> {{section.label.toUpperCase()}}</a>
           </li>
         </ul>
 
