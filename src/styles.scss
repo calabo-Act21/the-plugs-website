@@ -73,8 +73,8 @@ nav {
     margin:0;
     padding:0;
     background: url(./assets/img/home.jpg) no-repeat center; 
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 #root-album {
@@ -86,8 +86,16 @@ nav {
     margin:0;
     padding:0;
     background: url(./assets/img/videos.jpg) no-repeat center; 
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#root-news {
+    margin:0;
+    padding:0;
+    background: url(./assets/img/news.jpg) no-repeat center; 
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 //////////////////////////////////////////////////////////////

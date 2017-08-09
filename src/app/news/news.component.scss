@@ -1,0 +1,10 @@
+
+@media (max-width: 500px) {
+    .news-maxi { display: none!important; }
+    .news-mini { display: block!important; }
+}
+
+@media (min-width: 500px) {
+    .news-maxi { display: block!important; }
+    .news-mini { display: none!important; }
+}
