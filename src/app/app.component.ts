@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import './rxjs-operators';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ export class AppComponent {
     { id: 'album', label: 'Album' },
     { id: 'videos', label: 'Vidéos' },
     { id: 'photos', label: 'Photos' },
-    { id: 'news', label: 'News' }
+    { id: 'news', label: 'News' },
+    { id: 'contact', label: 'Contact' }
   ];
 }

@@ -123,6 +123,13 @@ padding: 20px 0px 40px 0px;
     font-weight: 400;
   }
 
+  p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 40px;
+  }
+
   @media (max-width: 500px) {
     .main-title { font-size: 48px!important; }
     .alt-title { font-size: 24px!important; }
@@ -130,6 +137,19 @@ padding: 20px 0px 40px 0px;
     .news-mini { display: block!important; }
 }
 
-.slider .indicators .indicator-item.active {
+.slider .indicators .indicator-item.active,
+a.btn {
     background-color: $action-color;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: $header-fore;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $header-fore;
+    box-shadow: 0 1px 0 0 $header-fore;
+}
+input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: $header-fore;
 }

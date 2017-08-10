@@ -1,0 +1,22 @@
+<div class="container center-align">
+  <div class="main-title">Contactez nous !</div>
+  <p>Si vous souhaitez nous contacter, pour nous proposer une date, nous dire que vous n’aimez pas les asperges, vous insurger
+    contre ceux qui n’aiment pas le Rock, ou encore pour savoir si le batteur est célibataire, contactez nous au travers
+    de ce formulaire, ou directement par mail à :<img src="./assets/img/mail.png" style="vertical-align: text-top;" /></p>
+
+  <form name="sentMessage" class="signup-form" id="contactForm" novalidate>
+    <div class="input-field col s12">
+      <input class="validate" id="name" name="name" type="text" [(ngModel)]="name">
+      <label for="name" class="active">Nom complet</label>
+    </div>
+    <div class="input-field col s12">
+      <input class="validate" id="email" name="email" type="email" [(ngModel)]="email">
+      <label for="email" class="">Email</label>
+    </div>
+    <div class="input-field col s12">
+      <textarea class="materialize-textarea" id="message" name="message" materialize="characterCounter" length="20" [(ngModel)]="message"></textarea>
+      <label for="textarea1" class="">Message</label>
+    </div>
+     <a class="waves-effect waves-light btn" (click)="send()">Envoyer</a> 
+  </form>
+</div>
