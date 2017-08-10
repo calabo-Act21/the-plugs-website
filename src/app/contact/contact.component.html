@@ -6,17 +6,17 @@
 
   <form name="sentMessage" class="signup-form" id="contactForm" novalidate>
     <div class="input-field col s12">
-      <input class="validate" id="name" name="name" type="text" [(ngModel)]="name">
+      <input id="name" name="name" type="text" [(ngModel)]="name">
       <label for="name" class="active">Nom complet</label>
     </div>
     <div class="input-field col s12">
-      <input class="validate" id="email" name="email" type="email" [(ngModel)]="email">
+      <input id="email" name="email" type="email" [(ngModel)]="email">
       <label for="email" class="">Email</label>
     </div>
     <div class="input-field col s12">
       <textarea class="materialize-textarea" id="message" name="message" materialize="characterCounter" length="20" [(ngModel)]="message"></textarea>
       <label for="textarea1" class="">Message</label>
     </div>
-     <a class="waves-effect waves-light btn" (click)="send()">Envoyer</a> 
+     <a class="waves-effect waves-light btn" [ngClass]="{disabled: !canSend()}" (click)="send()">Envoyer</a> 
   </form>
 </div>
