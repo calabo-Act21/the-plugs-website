@@ -19,6 +19,6 @@ export class AppComponent implements OnInit {
     setTimeout(function () {
       // discard splash screen
       document.getElementsByTagName('body').item(0).classList.toggle('loaded');
-    }, 0);
+    }, 1000);
   }
 }
