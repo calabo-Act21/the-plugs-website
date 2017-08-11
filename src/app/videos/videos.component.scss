@@ -1,7 +1,13 @@
+@import '../../vars';
+
 .container { width: 900px; }
 
 .slider .slides {
     background-color: rgba(0,0,0,0);
+}
+
+/deep/ .slider .indicators .indicator-item.active {
+    background-color: $btn-color;
 }
 
 @media (max-width: 900px) {

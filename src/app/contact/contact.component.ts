@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -22,7 +23,7 @@ export class ContactComponent implements OnInit {
       headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
       const postOptions = new RequestOptions({ headers: headers });
       const content = `name=${this.name}&email=${this.email}&message=${this.message}`;
-      this.http.post('/angular/assets/bin/contact_me.php', content, postOptions).subscribe(res => {
+      this.http.post(environment.contactUrl, content, postOptions).subscribe(res => {
         this.name = null;
         this.email = null;
         this.message = null;
