@@ -11,6 +11,7 @@ import { NewsComponent } from './news/news.component';
 import { HomeComponent } from './home/home.component';
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
     PhotosComponent,
     NewsComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

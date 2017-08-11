@@ -1,0 +1,49 @@
+@import '../../vars';
+
+.header-logo {
+    margin: 10px;
+}
+
+/deep/ #sidenav-overlay {
+    z-index: 996;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: $nav-height;
+    line-height: $nav-height;
+}
+.navbar-fixed {
+    height: $nav-height;
+}
+
+.side-nav {
+    background: $header-back-color; 
+    border-left: $border;
+    padding-top: 50px;
+    li > a {
+        font-size: 24px;
+        height: 60px;
+        line-height: 60px;
+    }    
+}
+
+nav {
+    background: $header-back-color; 
+    border-bottom: $border;
+    .brand-logo {
+        color: $header-fore-color;    
+        font-size: 1.8rem;
+        margin-left: 15px;
+        margin-right: 25px;
+        position: initial;
+    }
+    .nav-wrapper > ul > li > a {
+        color: $header-fore-color;
+    }
+    .social-menu {
+        margin-right: 10px;
+    }
+    .mdi-menu {
+        color: $header-fore-color;
+    }
+}

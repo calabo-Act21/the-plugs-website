@@ -7,7 +7,6 @@ import './rxjs-operators';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
   sections = [
     { id: 'album', label: 'Album' },
     { id: 'videos', label: 'Vidéos' },
