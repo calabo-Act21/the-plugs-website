@@ -30,6 +30,8 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 nav {
     background: $header-back-color; 
     border-bottom: $border;
+    -webkit-transition: background 0.5s, margin-top 0.5s; /* Safari */
+    transition: background 0.5s, margin-top 0.5s;
     .brand-logo {
         color: $header-fore-color;    
         font-size: 1.8rem;
@@ -46,4 +48,11 @@ nav {
     .mdi-menu {
         color: $header-fore-color;
     }
+}
+
+nav.scroll-top {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin-top: 10px;
 }

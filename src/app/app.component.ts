@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import './rxjs-operators';
 
 @Component({
@@ -6,7 +6,7 @@ import './rxjs-operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   sections = [
     { id: 'album', label: 'Album' },
     { id: 'videos', label: 'Vidéos' },
@@ -14,4 +14,11 @@ export class AppComponent {
     { id: 'news', label: 'Actualités' },
     { id: 'contact', label: 'Contact' }
   ];
+
+  ngOnInit(): void {
+    setTimeout(function () {
+      // discard splash screen
+      document.getElementsByTagName('body').item(0).classList.toggle('loaded');
+    }, 0);
+  }
 }
