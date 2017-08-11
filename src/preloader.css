@@ -29,8 +29,8 @@ h1 {
 #loader-logo {
     z-index: 3001;
     position: absolute;
-     left: 50%;
-     top: 50%;
+     left: 49.7%;
+     top: 49.7%;
     height: 100px;
     width: 128px;
      background: url("./assets/img/loader-logo.png") top left no-repeat;     
@@ -46,7 +46,9 @@ h1 {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    /* bleu */
+    /* border-top-color: #3498db; */
+    border-top-color: #ebb538;
 
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -65,7 +67,9 @@ h1 {
         bottom: 5px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #e74c3c;
+        /* rouge */
+        /* border-top-color: #e74c3c; */
+        border-top-color: #ebb538;
 
         -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
         animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -80,7 +84,9 @@ h1 {
         bottom: 15px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #f9c922;
+        /* jaune */
+        /* border-top-color: #f9c922; */
+        border-top-color: #ebb538;
 
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */

@@ -15,19 +15,19 @@
       <section materialize="scrollSpy" [id]="section.id" class="section scrollspy">
         <div [ngSwitch]="section.id">
           <div *ngSwitchCase="'album'">
-            <app-album></app-album>
+            <app-album [title]="section.label"></app-album>
           </div>
           <div *ngSwitchCase="'videos'">
-            <app-videos></app-videos>
+            <app-videos [title]="section.label"></app-videos>
           </div>
           <div *ngSwitchCase="'photos'">
-            <app-photos></app-photos>
+            <app-photos [title]="section.label"></app-photos>
           </div>
           <div *ngSwitchCase="'news'">
-            <app-news></app-news>
+            <app-news [title]="section.label"></app-news>
           </div>
           <div *ngSwitchCase="'contact'">
-            <app-contact></app-contact>
+            <app-contact [title]="section.label"></app-contact>
           </div>
         </div>
       </section>

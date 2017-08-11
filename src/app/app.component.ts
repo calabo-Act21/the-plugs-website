@@ -8,11 +8,11 @@ import './rxjs-operators';
 })
 export class AppComponent implements OnInit {
   sections = [
-    { id: 'album', label: 'Album' },
-    { id: 'videos', label: 'Vidéos' },
-    { id: 'photos', label: 'Photos' },
-    { id: 'news', label: 'Actualités' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'album', label: 'Nouvel Album !', title: 'Album' },
+    { id: 'videos', label: 'Vidéos', title: 'Vidéos' },
+    { id: 'photos', label: 'Photos', title: 'Photos' },
+    { id: 'news', label: 'Actualités', title: 'Actualités' },
+    { id: 'contact', label: 'Contactez nous !', title: 'Contact' }
   ];
 
   ngOnInit(): void {
