@@ -1,33 +1,33 @@
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="left brand-logo">
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="left brand-logo">
           <img class="header-logo" src="assets/img/header-logo.png" alt="The Plugs">
         </a>
-        <a href="#" materialize="sideNav" [materializeParams]="[{edge:'right', closeOnClick: true, menuWidth: 250}]" data-activates="mobile-menu"
-          class="button-collapse right"><i class="mdi mdi-36px mdi-menu"></i></a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li *ngFor="let section of sections">
-            <a [href]="'#'+section.id"> {{section.label.toUpperCase()}}</a>
-          </li>
-        </ul>
+      <a href="#" materialize="sideNav" [materializeParams]="[{edge:'right', closeOnClick: true, menuWidth: 250}]" data-activates="mobile-menu"
+        class="button-collapse right"><i class="mdi mdi-36px mdi-menu"></i></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li *ngFor="let section of sections">
+          <a [href]="'#'+section.id"> {{section.label.toUpperCase()}}</a>
+        </li>
+      </ul>
 
-        <ul class="social-menu right hide-on-med-and-down">
-          <li>
-            <a href="https://www.youtube.com/channel/UCEO4PFotP2rN4jEuakVxTrw" target="_blank"><i class="mdi mdi-24px mdi-youtube-play"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/the_plugs_fr" target="_blank"><i class="mdi mdi-24px mdi-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/Plugsband" target="_blank"><i class="mdi mdi-24px mdi-facebook-box"></i></a>
-          </li>
-        </ul>
-        <ul class="side-nav" id="mobile-menu">
-          <li *ngFor="let section of sections" class="center-align">
-            <a [href]="'#'+section.id"> {{section.label}}</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+      <ul class="social-menu right hide-on-med-and-down">
+        <li>
+          <a href="https://www.youtube.com/channel/UCEO4PFotP2rN4jEuakVxTrw" target="_blank"><i class="mdi mdi-24px mdi-youtube-play"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/the_plugs_fr" target="_blank"><i class="mdi mdi-24px mdi-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Plugsband" target="_blank"><i class="mdi mdi-24px mdi-facebook-box"></i></a>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-menu">
+        <li *ngFor="let section of sections" class="center-align">
+          <a [href]="'#'+section.id"> {{section.label}}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -1,14 +1,30 @@
 <div class="container center-align">
-  <div class="main-title">News</div>
+  <div class="main-title">Actualités</div>
   <div class="row">
-    <div class="col-md-12">
-      <div class="news-maxi">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlugsband%2F&tabs=timeline&width=500&height=650&small_header=true&hide_cover=false&show_facepile=false&appId"
-          width="500" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    <div class="col s12">
+      <ul materialize="tabs" class="tabs">
+        <li class="tab col s6 m3 offset-m3"><a class="active" href="#timeline-tab">News</a></li>
+        <li class="tab col s6 m3"><a href="#events-tab">Concerts</a></li>
+      </ul>
+      <div id="timeline-tab">
+        <div class="news-maxi">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlugsband%2F&tabs=timeline&width=500&height=650&small_header=true&hide_cover=false&show_facepile=false&appId"
+            width="500" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="news-mini">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlugsband%2F&tabs=timeline&width=340&height=650&small_header=true&hide_cover=false&show_facepile=false&appId"
+            width="340" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
-      <div class="news-mini">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlugsband%2F&tabs=timeline&width=340&height=650&small_header=true&hide_cover=false&show_facepile=false&appId"
-          width="340" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      <div id="events-tab">
+        <div class="news-maxi">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlugsband%2F&tabs=events&width=500&height=650&small_header=true&hide_cover=false&show_facepile=false&appId"
+            width="500" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="news-mini">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlugsband%2F&tabs=events&width=340&height=650&small_header=true&hide_cover=false&show_facepile=false&appId"
+            width="340" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
     </div>
   </div>
