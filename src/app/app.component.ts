@@ -14,8 +14,8 @@ export class AppComponent implements OnInit {
   sections = [
     { id: 'album', label: 'Nouvel Album !', title: 'Album' },
     { id: 'videos', label: 'Vidéos', title: 'Vidéos' },
-    { id: 'photos', label: 'Photos', title: 'Photos' },
     { id: 'news', label: 'Actualités', title: 'Actualités' },
+    { id: 'photos', label: 'Photos', title: 'Photos' },
     { id: 'contact', label: 'Contactez nous !', title: 'Contact' }
   ];
 
