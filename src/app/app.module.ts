@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
     NewsComponent,
     HomeComponent,
     ContactComponent,
-    HeaderComponent
+    HeaderComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

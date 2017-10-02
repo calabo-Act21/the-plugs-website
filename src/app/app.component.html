@@ -11,14 +11,14 @@
   </div>
 
   <div class="row section-row" *ngFor="let section of sections" [id]="'root-' + section.id">
-    <div class="col s12">
+    <div *ngIf="videos" class="col s12">
       <section materialize="scrollSpy" [id]="section.id" class="section scrollspy">
         <div [ngSwitch]="section.id">
           <div *ngSwitchCase="'album'">
             <app-album [title]="section.label"></app-album>
           </div>
           <div *ngSwitchCase="'videos'">
-            <app-videos [title]="section.label"></app-videos>
+            <app-videos [videos]="videos" [title]="section.label"></app-videos>
           </div>
           <div *ngSwitchCase="'photos'">
             <app-photos [title]="section.label"></app-photos>

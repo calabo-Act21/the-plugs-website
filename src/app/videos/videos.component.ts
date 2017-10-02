@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Http } from '@angular/http';
+import { VideosService } from './videos.service';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-videos',
@@ -7,9 +10,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class VideosComponent implements OnInit {
   @Input() title;
+  @Input() videos: any[];
   constructor() { }
 
   ngOnInit() {
-  }
-
+  } 
 }

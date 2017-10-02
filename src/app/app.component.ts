@@ -1,12 +1,16 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import './rxjs-operators';
+import { VideosService } from './videos/videos.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [VideosService]
+
 })
 export class AppComponent implements OnInit {
+  videos: any[];
   sections = [
     { id: 'album', label: 'Nouvel Album !', title: 'Album' },
     { id: 'videos', label: 'Vidéos', title: 'Vidéos' },
@@ -15,10 +19,15 @@ export class AppComponent implements OnInit {
     { id: 'contact', label: 'Contactez nous !', title: 'Contact' }
   ];
 
+  constructor(private api: VideosService) { }
+
   ngOnInit(): void {
     setTimeout(function () {
-      // discard splash screen
-      document.getElementsByTagName('body').item(0).classList.toggle('loaded');
-    }, 1000);
+      this.api.getVideos().subscribe(videos => {
+        this.videos = videos;
+        // discard splash screen
+        document.getElementsByTagName('body').item(0).classList.toggle('loaded');
+      });
+    }.bind(this), 1000);
   }
 }

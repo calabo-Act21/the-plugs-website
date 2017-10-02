@@ -2,35 +2,10 @@
   <div class="main-title">{{title}}</div>
   <div materialize="slider" [materializeParams]="[{ height: 507, interval: 99999999999999999999}]" class="slider ">
     <ul class="slides">
-      <li>
+      <li *ngFor="let video of videos">
         <div class="video-container">
-          <iframe src="//www.youtube.com/embed/8J8yhcPmNwA?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </li>
-      <li>
-        <div class="video-container">
-          <iframe src="//www.youtube.com/embed/VYj9bUF1JEE?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </li>
-      <li>
-        <div class="video-container">
-          <iframe src="//www.youtube.com/embed/LvE2-HJYN0Y?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </li>
-      <li>
-        <div class="video-container">
-          <iframe src="//www.youtube.com/embed/VjM5T-hJ_Js?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </li>
-      <li>
-        <div class="video-container">
-          <iframe src="//www.youtube.com/embed/2G861RlYJ0E?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </li>
-      <li>
-        <div class="video-container">
-          <iframe src="//www.youtube.com/embed/t1lol0bogQ4?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
+          <iframe [src]="'//www.youtube.com/embed/' + video.url + '?rel=0' | safe" frameborder="0" allowfullscreen></iframe>
+        </div>        
       </li>
     </ul>
   </div>
