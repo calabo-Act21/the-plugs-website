@@ -3,7 +3,7 @@
   <app-header [sections]="sections"></app-header>
 
   <div class="row section-row" id="root-home">
-    <div class="col s12">
+    <div class="col s12 z-depth-5">
       <section id="home" class="section">
         <app-home></app-home>
       </section>
@@ -11,7 +11,7 @@
   </div>
 
   <div class="row section-row" *ngFor="let section of sections" [id]="'root-' + section.id">
-    <div *ngIf="videos" class="col s12">
+    <div *ngIf="videos" class="col s12 z-depth-5">
       <section materialize="scrollSpy" [id]="section.id" class="section scrollspy">
         <div [ngSwitch]="section.id">
           <div *ngSwitchCase="'album'">
