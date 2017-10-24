@@ -7,8 +7,22 @@
     margin: 20px auto 0 auto;
 }
 
-  @media (max-width: 700px) {
+.player-soundcloud {
+    display: none;
+}
+
+.player-spotify {
+    display: block;
+}
+
+@media (max-width: 700px) {
     .player-wrapper { width: 100% }
+    .player-spotify {
+        display: none;
+    }
+    .player-soundcloud {
+        display: block;
+    }
 }
 
 .cover-wrapper {

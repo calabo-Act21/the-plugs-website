@@ -12,7 +12,7 @@ import { VideosService } from './videos/videos.service';
 export class AppComponent implements OnInit {
   videos: any[];
   sections = [
-    { id: 'album', label: 'Nouveau Single : Wise Monkey !', title: 'Album' },
+    { id: 'album', label: 'Nouveau Single', title: 'Musique' },
     { id: 'videos', label: 'Vidéos', title: 'Vidéos' },
     { id: 'news', label: 'Actualités', title: 'Actualités' },
     { id: 'photos', label: 'Photos', title: 'Photos' },

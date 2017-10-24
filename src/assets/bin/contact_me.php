@@ -11,8 +11,8 @@ $email_address = $_POST['email'];
 $message = $_POST['message'];
 	
 // create email body and send it	
-$to = 'camlaborde@gmail.com';
-// $to = 'theplugsband@live.fr';
+// $to = 'camlaborde@gmail.com';
+$to = 'theplugsband@live.fr';
 $email_subject = "The Plugs Website : message envoyé par:  $name";
 $email_body = "Vous avez reçu un nouveau message ! \n\n".
 				  "Nom: $name \n".

@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  contactUrl: '/angular/assets/bin/contact_me.php'
+  contactUrl: '/assets/bin/contact_me.php'
 };
