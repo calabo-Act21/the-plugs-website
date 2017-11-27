@@ -1,30 +1,37 @@
+@import '../../vars';
+
+.tabs {
+    background: transparent;
+    margin-bottom: 25px;
+}
+
+.tabs .tab a, 
+.tabs .tab a:hover, 
+.tabs .tab a.active {
+    background-color: transparent;
+    color: $text-color-alt;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.tabs /deep/ .indicator {
+    background-color: $text-color-alt;
+}
+
 .main-title {
     margin: 0!important;
 }
 
-.player-wrapper {
-    width: 700px;
-    margin: 20px auto 0 auto;
-}
+// .player-wrapper {
+//     width: 700px;
+//     margin: 20px auto 0 auto;
+// }
 
-.player-soundcloud {
-    display: none;
-}
-
-.player-spotify {
-    display: block;
-}
-
-@media (max-width: 700px) {
-    .player-wrapper { width: 100% }
-    .player-spotify {
-        display: none;
-    }
-    .player-soundcloud {
-        display: block;
-    }
-}
+// @media (max-width: 900px) {
+//     .player-wrapper { width: 100% }
+// }
 
 .cover-wrapper {
     margin: 25px;
 }
+
